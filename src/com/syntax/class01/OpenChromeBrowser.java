@@ -15,7 +15,7 @@ public class OpenChromeBrowser {
 		driver.get("https://www.facebook.com");
 		
 		String actualurl = driver.getCurrentUrl();
-		String expectedUrl = "https://www.facebookj.com";
+		String expectedUrl = "https://www.facebook.com";
 		
 		if(actualurl.equalsIgnoreCase(expectedUrl)) {
 			String title = driver.getTitle();
