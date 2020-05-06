@@ -15,7 +15,7 @@ public class LoginToHrms {
 
 		public static void main(String[] args) throws IOException, InterruptedException {
 			
-			String filePath=System.getProperty("user.dir")+"/configs/configuration.properties";
+			String filePath=System.getProperty("user.dir")+"\\config\\homeWork.properties";
 			FileInputStream fis=new FileInputStream(filePath);
 			
 			Properties prop=new Properties();
@@ -27,11 +27,11 @@ public class LoginToHrms {
 			switch(browser.toLowerCase()) {
 			
 			case "chrome":
-				System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
+				System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
 				driver=new ChromeDriver();
 				break;
 			case "firefox":
-				System.setProperty("webdriver.gecko.driver", "drivers/geckodriver");
+				System.setProperty("webdriver.gecko.driver", "drivers/geckodriver.exe");
 				driver = new FirefoxDriver();
 				break;
 			}

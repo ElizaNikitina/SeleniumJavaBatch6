@@ -12,8 +12,8 @@ public class Newtours {
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://newtours.demoaut.com"); 
 		driver.findElement(By.linkText("Register here")).click();
-		driver.findElement(By.name("firstName")).sendKeys("Eliza");
-		driver.findElement(By.name("lastName")).sendKeys("Nikitina");
+		driver.findElement(By.name("firsNtName")).sendKeys("Eliza");
+		driver.findElement(By.name("lastame")).sendKeys("Nikitina");
 		driver.findElement(By.name("phone")).sendKeys("9684422767");
 		driver.findElement(By.id("userName")).sendKeys("elizaa@yahoo.com");
 		driver.findElement(By.name("address1")).sendKeys("1366 New York av");
