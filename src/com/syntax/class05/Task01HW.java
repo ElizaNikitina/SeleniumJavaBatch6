@@ -27,10 +27,14 @@ public class Task01HW extends BaseClass {
 		for (WebElement dep : departments) {
 			String depts = dep.getText();
 			System.out.println(depts);
+			
+			select.selectByVisibleText("Computers");
+			if (depts.contentEquals("Computers")) {
+				dep.click();
+			}
 
 		}
 		
-		select.selectByValue("search-alias=computers");
 		
 	
 		
