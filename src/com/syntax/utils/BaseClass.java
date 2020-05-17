@@ -1,5 +1,7 @@
 package com.syntax.utils;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -26,6 +28,8 @@ public class BaseClass {
 			
 			
 		}
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT_TIME, TimeUnit.SECONDS);
 		
 		driver.get(ConfigsReader.getProperty("url"));
 		return driver;

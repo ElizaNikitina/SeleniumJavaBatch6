@@ -13,24 +13,24 @@ public class AlertDemoTeather {
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//button[@id='alert']")).click();
 
-		 //driverHandling simple alert/PopUps
-		Alert simpleAlert = driver.switchTo().alert();
-		Thread.sleep(1000);
-		String simpleAText = simpleAlert.getText();
-		System.out.println("This is simple alert text:: " + simpleAText);
-		Thread.sleep(1000);
-		simpleAlert.accept();
-		Thread.sleep(1000);
-
-		 //Handling confirmation Alert
-		driver.findElement(By.id("confirm")).click();
-		Alert confirmAlert = driver.switchTo().alert();
-		Thread.sleep(1000);
-		String confirmAText = confirmAlert.getText();
-		System.out.println("This is Confirm alert text:: " + confirmAText);
-		Thread.sleep(1000);
-		confirmAlert.dismiss();
-		Thread.sleep(1000);
+//		 //driverHandling simple alert/PopUps
+//		Alert simpleAlert = driver.switchTo().alert();
+//		Thread.sleep(1000);
+//		String simpleAText = simpleAlert.getText();
+//		System.out.println("This is simple alert text:: " + simpleAText);
+//		Thread.sleep(1000);
+//		simpleAlert.accept();
+//		Thread.sleep(1000);
+//
+//		 //Handling confirmation Alert
+//		driver.findElement(By.id("confirm")).click();
+//		Alert confirmAlert = driver.switchTo().alert();
+//		Thread.sleep(1000);
+//		String confirmAText = confirmAlert.getText();
+//		System.out.println("This is Confirm alert text:: " + confirmAText);
+//		Thread.sleep(1000);
+//		confirmAlert.dismiss();
+//		Thread.sleep(1000);
 
 		// Handling Prompt alerts/confirmation alerts by providing some confirmation
 		// message.
